@@ -14,5 +14,4 @@ const CounterButtons = () => {
     </div>
   );
 };
-
 export default CounterButtons;

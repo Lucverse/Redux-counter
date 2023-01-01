@@ -1,6 +1,5 @@
 import "./App.css";
 import Counter from './Components/Counter'
-
 function App() {
   return (
     <div className="App">
@@ -8,5 +7,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
