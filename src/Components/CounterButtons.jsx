@@ -8,6 +8,7 @@ const CounterButtons = () => {
       <button onClick={() => {
         store.dispatch(handleAddActionObj(1))
       }} data-testid="addButton">ADD</button>
+
       <button onClick={() => {
         store.dispatch(handleReduceActionObj(1))
       }} data-testid="reduceButton">REDUCE</button>
