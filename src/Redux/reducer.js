@@ -1,12 +1,12 @@
+import { ADD, REDUCE } from "./actionTypes";
 //Complete the reducer function logic inside the curly braces {}
-const reducer = (state = 1, action) => {
-    switch (action.type){
-        case "ADD":
-            return state + 1;
-        case "REDUCE":
-            return state -1;
-        default:
-             return state;
+const reducer = (state = 10, action) => {
+
+    if(action.type===ADD){
+        state={...state,"counter":state.counter+action.payload}
+    }else if(action.type===REDUCE){
+        state={...state,"counter":state.counter-action.payload}
     }
+    return state;
 };
 export { reducer };
