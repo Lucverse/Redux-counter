@@ -1,9 +1,9 @@
 //Complete the reducer function logic inside the curly braces {}
 const reducer = (state = 1, action) => {
     switch (action.type){
-        case "INCREAMENT":
+        case "ADD":
             return state + 1;
-        case "DECREAMENT":
+        case "REDUCE":
             return state -1;
         default:
              return state;
