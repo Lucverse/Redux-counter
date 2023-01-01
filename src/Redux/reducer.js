@@ -8,4 +8,5 @@ const reducer = (state = initialdata, action) => {
     }
     return state;
 };
+
 export { reducer };
